@@ -1,0 +1,14 @@
+{
+  "chainId": 296,
+  "deployer": "0x42f67C830147E9cb4f9c41FDad358639e0dC8c38",
+  "contracts": {
+    "AgriVestPlatform": "0xA55C1617bDe31d17743434D19cf44D8cFe0E2FB4",
+    "AgriVestRewards": "0x31052F57De0d0498FE18E34733b6B54f0038f2e3"
+  },
+  "config": {
+    "feeReceiver": "0x42f67C830147E9cb4f9c41FDad358639e0dC8c38",
+    "platformFeePercentage": "500",
+    "minimumInvestment": "10000000000000000000"
+  },
+  "timestamp": "2025-09-21T21:09:51.015Z"
+}

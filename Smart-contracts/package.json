@@ -4,20 +4,32 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "hardhat compile",
+    "clean": "hardhat clean",
+    "typecheck": "tsc --noEmit",
+    "deploy:testnet": "hardhat run scripts/deploy-hedera.ts --network hederaTestnet",
+    "deploy:mainnet": "hardhat run scripts/deploy-hedera.ts --network hederaMainnet",
+    "test": "hardhat test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.0.1",
     "@nomicfoundation/hardhat-ignition": "^3.0.3",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
     "@nomicfoundation/hardhat-toolbox-viem": "^5.0.0",
     "@openzeppelin/contracts": "^4.9.6",
+    "@types/chai": "^5.2.2",
+    "@types/mocha": "^10.0.10",
     "@types/node": "^22.18.6",
+    "chai": "^6.0.1",
     "dotenv": "^17.2.2",
+    "ethers": "^6.15.0",
     "forge-std": "github:foundry-rs/forge-std#v1.9.4",
     "hardhat": "^3.0.6",
+    "mocha": "^11.7.2",
     "typescript": "~5.8.3",
     "viem": "^2.37.6"
   },
