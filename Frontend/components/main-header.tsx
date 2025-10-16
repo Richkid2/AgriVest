@@ -1,33 +1,25 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
+import Logo from "./logo";
 import Button from "./cta-button";
 
 const navLinks = [
   { label: "about", href: "/about" },
-  { label: "how it works", href: "/how-it-works" },
+  { label: "how it works", href: "/#how-it-works" },
   { label: "farms", href: "/farms" },
   { label: "marketplace", href: "/marketplace" },
 ];
 
 function MainHeader() {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <header className="flex justify-between items-center bg-secondary-background p-4">
-      <Link href={"/"} className="flex gap-x-3 items-center">
-        <Image
-          src="/Agrivest-logo.jpg"
-          alt="AgriVest Logo"
-          width={32}
-          height={32}
-          className="object-contain"
-          priority
-        />
-        <h1 className="font-bold">Agrivest</h1>
+      <Link href={"/"}>
+        <Logo className={"flex gap-x-0.5 items-center"} />
       </Link>
       <nav className="flex justify-between items-center gap-x-40 ">
         <ul className="flex justify-between gap-x-10 font-semibold capitalize">
@@ -38,7 +30,7 @@ function MainHeader() {
                 className={`capitalize ${
                   pathname.startsWith(link.href)
                     ? "text-primary-background"
-                    : "hover:text-primary-background"
+                    : "hover:text-primary-background/50"
                 } `}
               >
                 {link.label}
@@ -46,7 +38,7 @@ function MainHeader() {
             </li>
           ))}
         </ul>
-        <Button variant="primary" cta={() => {}}>
+        <Button cta={() => {}} style="px-4 py-2">
           connect wallet
         </Button>
       </nav>
