@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 import MainHeader from "@/components/main-header";
+import Footer from "@/components/footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -30,7 +31,10 @@ export default function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased flex flex-col gap-y-0.5`}
       >
         <MainHeader />
-        <div className="bg-primary-background">{children}</div>
+        <div className="bg-primary-background">
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

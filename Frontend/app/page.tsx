@@ -76,12 +76,12 @@ const impactMetrics = [
 
 export default function HomePage() {
   return (
-    <div role="main" className="flex flex-col divide-btn-secondary divide-y-2">
+    <main className="flex flex-col divide-btn-secondary divide-y-2">
       <section className="flex flex-col gap-y-10">
         <div className="flex gap-x-20 py-16 pl-16 pr-24">
           <div className="flex flex-col gap-y-16">
-            <div className="">
-              <h1 className=" text-[3rem]">
+            <div>
+              <h1 className="text-[3rem]">
                 Invest in Farming with Crypto. Earn Real-World Returns.
               </h1>
               <p className="text-[1.2rem]">
@@ -109,7 +109,7 @@ export default function HomePage() {
             priority
           />
         </div>
-        <div>
+        <div id="how-it-works">
           <div className="p-16 pb-10 w-full mx-auto text-center">
             <div className="w-[50%] mx-auto">
               <p className="text-[1rem]">
@@ -201,6 +201,6 @@ export default function HomePage() {
           />
         </div>
       </section>
-    </div>
+    </main>
   );
 }

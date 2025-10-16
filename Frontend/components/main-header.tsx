@@ -8,7 +8,7 @@ import Button from "./cta-button";
 
 const navLinks = [
   { label: "about", href: "/about" },
-  { label: "how it works", href: "/how-it-works" },
+  { label: "how it works", href: "/#how-it-works" },
   { label: "farms", href: "/farms" },
   { label: "marketplace", href: "/marketplace" },
 ];
@@ -30,7 +30,7 @@ function MainHeader() {
                 className={`capitalize ${
                   pathname.startsWith(link.href)
                     ? "text-primary-background"
-                    : "hover:text-primary-background"
+                    : "hover:text-primary-background/50"
                 } `}
               >
                 {link.label}
