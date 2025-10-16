@@ -1,22 +1,22 @@
-import type { Metadata } from 'next';
-import { Inter, JetBrains_Mono } from 'next/font/google';
-import './globals.css';
+import type { Metadata } from "next";
+import { Inter, JetBrains_Mono } from "next/font/google";
+import "./globals.css";
 
-import MainHeader from '@/components/main-header';
+import MainHeader from "@/components/main-header";
 
 const inter = Inter({
-  variable: '--font-inter',
-  subsets: ['latin'],
+  variable: "--font-inter",
+  subsets: ["latin"],
 });
 
 const jetbrainsMono = JetBrains_Mono({
-  variable: '--font-jetbrains-mono',
-  subsets: ['latin'],
+  variable: "--font-jetbrains-mono",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: 'AgriVest',
-  description: 'Your platform for agricultural investments.',
+  title: "AgriVest",
+  description: "Your platform for agricultural investments.",
 };
 
 export default function RootLayout({
@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased flex flex-col gap-y-0.5`}
       >
         <MainHeader />
-        <section className="bg-primary-background h-screen">{children}</section>
+        <div className="bg-primary-background">{children}</div>
       </body>
     </html>
   );
