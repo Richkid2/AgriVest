@@ -33,7 +33,7 @@ export default function RootLayout({
         <MainHeader />
         <div className="bg-primary-background">
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </body>
     </html>
