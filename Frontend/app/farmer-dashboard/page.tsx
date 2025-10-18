@@ -2,7 +2,13 @@
 
 import Image from "next/image";
 import Button from "@/components/cta-button";
-import { FaCheck, FaLocationArrow } from "react-icons/fa6";
+import {
+  FaCalendarXmark,
+  FaCheck,
+  FaLeaf,
+  FaLocationArrow,
+  FaRulerCombined,
+} from "react-icons/fa6";
 
 function LiveBlockchinExplorerPage() {
   return (
@@ -24,8 +30,8 @@ function LiveBlockchinExplorerPage() {
           </Button>
         </div>
       </div>
-      <section className="bg-card-background py-2 px-16">
-        <div className="border-2 border-blue-500">
+      <section className="bg-card-background py-6 px-16 rounded-md divide-y-4 divide-btn-secondary space-y-1">
+        <div>
           <h3>farm profile</h3>
           <div className="flex items-center gap-x-40 py-5">
             {/* <Image src={""} alt="" /> */}
@@ -51,15 +57,15 @@ function LiveBlockchinExplorerPage() {
             </div>
           </div>
         </div>
-        <div className="border-2 border-blue-500 py-2.5">
-          <h4 className="">verification status</h4>
+        <div className="space-y-2">
+          <h4 className="text-primary-background">verification status</h4>
           <div className="flex items-center justify-between capitalize text-sm">
-            <div className="flex flex-col gap-y-.5 text-stone-500 font-medium">
+            <div className="flex flex-col gap-y-1.5 text-stone-500 font-medium">
               <p>KYC verification</p>
               <p>farm documentation</p>
               <p>bank account</p>
             </div>
-            <div className="flex flex-col gap-y-.5 text-btn-primary">
+            <div className="flex flex-col gap-y-1.5 text-primary-background pr-40">
               <p>completed</p>
               <p>verified</p>
               <p>connected</p>
@@ -67,20 +73,36 @@ function LiveBlockchinExplorerPage() {
           </div>
         </div>
       </section>
-      <section className="bg-card-background py-2 px-16">
+      <section className="bg-card-background pt-6 pb-20 px-16 rounded-md">
         <h3>farm details</h3>
-        <div className="">
-          <div className="">
+        <div className="space-y-3 mt-4">
+          <div className="space-y-2">
             <p className="capitalize text-sm font-medium">farm type</p>
-            <div className="bg-btn-secondary w-full rounded-[1.5rem] px-5 py-2.5 text-card-background h-3.5"></div>
+            <div className="bg-btn-secondary w-full rounded-[.5rem] px-10 py-2.5 flex items-center gap-x-10 text-primary font-medium">
+              <FaLeaf />
+              <span className="capitalize">coffee plantation (organic)</span>
+            </div>
           </div>
-          <div className="">
+          <div className="space-y-2">
             <p className="capitalize text-sm font-medium">farm size</p>
-            <div className=""></div>
+            <div className="bg-btn-secondary w-full rounded-[.5rem] px-10 py-2.5 flex items-center gap-x-10 text-primary font-medium">
+              <FaRulerCombined />
+              <span className="capitalize"> 15 hectares</span>
+            </div>
           </div>
-          <div className="">
+          <div className="space-y-2">
             <p className="capitalize text-sm font-medium">farming experience</p>
-            <div className=""></div>
+            <div className="bg-btn-secondary w-full rounded-[.5rem] px-10 py-2.5 flex items-center gap-x-10 text-primary font-medium">
+              <FaCalendarXmark />
+              <span className="capitalize"> 12 years</span>
+            </div>
+          </div>
+          <div className="space-y-2">
+            <p className="capitalize text-sm font-medium">location</p>
+            <div className="bg-btn-secondary w-full rounded-[.5rem] px-10 py-2.5 flex items-center gap-x-10 text-primary font-medium">
+              <FaLocationArrow />
+              <span className="capitalize"> chiapas, mexico</span>
+            </div>
           </div>
         </div>
       </section>

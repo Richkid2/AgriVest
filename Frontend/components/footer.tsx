@@ -32,7 +32,7 @@ function Footer() {
   return (
     <footer className="px-16 pb-10">
       <div className="grid grid-cols-4 gap-x-4 ">
-        <div className="space-y-5">
+        <div className="space-y-5 mr-1">
           <Logo className={"flex gap-x-2 items-center text-btn-primary"} />
           <p className="text-md font-medium">
             Connecting farmers with crypto investors for sustainable agriculture
