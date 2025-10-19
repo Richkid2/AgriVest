@@ -18,7 +18,7 @@ function Button({
   style,
 }: ButtonProps) {
   const baseStyle =
-    "cursor-pointer capitalize rounded-xl hover:opacity-80 transition-all duration-300 ease-in-out";
+    "cursor-pointer capitalize rounded-lg hover:opacity-80 transition-all duration-300 ease-in-out";
 
   const btnVariant =
     variant === "primary"
