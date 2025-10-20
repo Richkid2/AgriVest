@@ -1,8 +1,9 @@
 import Image from "next/image";
 
 import Button from "./cta-button";
-import { FaLeaf, FaLocationArrow, FaRegCalendarTimes } from "react-icons/fa";
 import { Progress } from "./ui/progress";
+
+import { FaLeaf, FaLocationArrow, FaRegCalendarTimes } from "react-icons/fa";
 
 type FeatureFarmCardProps = {
   image?: string;
