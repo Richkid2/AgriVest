@@ -114,10 +114,18 @@ function Footer() {
       <div className="text-sm flex items-center justify-between text-btn-secondary">
         <div>&copy; 2025 Agrivest Platform. All rights reserved.</div>
         <div className="flex items-center justify-between gap-x-10 capitalize">
-          <Link href={""}>privacy policy</Link>
-          <Link href={""}>Terms of service</Link>
-          <Link href={""}>cookie policy</Link>
-          <Link href={""}>disclaimer</Link>
+          <Link href={""} className="hover:text-black">
+            privacy policy
+          </Link>
+          <Link href={""} className="hover:text-black">
+            Terms of service
+          </Link>
+          <Link href={""} className="hover:text-black">
+            cookie policy
+          </Link>
+          <Link href={""} className="hover:text-black">
+            disclaimer
+          </Link>
         </div>
       </div>
     </footer>
